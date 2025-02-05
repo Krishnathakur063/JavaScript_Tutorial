@@ -30,17 +30,45 @@ let myObj = {
 
 } // This is an example of Object. Anything inside curley braces is Object. Datatype of object could be anything like Number, String or another object as well.
 
-const myFunction = function(){
-    console.log("Hello JavaScript");
+// const myFunction = function(){
+//     console.log("Hello JavaScript");
     
-}
+// }
 
-console.log(typeof bigNumber);
-console.log(typeof id);
-console.log(typeof outsideTemp);
-console.log(typeof scoreValue);
-console.log(typeof heroes);
-console.log(typeof myObj);
-console.log(typeof myFunction);
+// console.log(typeof bigNumber);
+// console.log(typeof id);
+// console.log(typeof outsideTemp);
+// console.log(typeof scoreValue);
+// console.log(typeof heroes);
+// console.log(typeof myObj);
+// console.log(typeof myFunction);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+// ++++++++++++++++++++ Memory Allocation ++++++++++++++++++++++++++++++++++++++++++
+
+// Sack (Primitive DataTypes) -> It provides a copy of declared variable.
+// Heap (Non-Primitive DataTypes) -> It provides a reference of declared variable (original values).
+
+let superHero = "Superman"
+
+let anotherSuperHero = superHero
+
+anotherSuperHero = 'BatMan'
+
+console.log(superHero);
+console.log(anotherSuperHero);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+userTwo = userOne
+
+userTwo.email = "userTwo@google.com"
+
+console.log(userOne);
+console.log(userTwo);
