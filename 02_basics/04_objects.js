@@ -52,13 +52,59 @@ const users =  [
 
 users[1].email
 
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)); // It returns arrays of keys.
-console.log(Object.values(tinderUser)); // It returns arrays of values.
-console.log(Object.entries(tinderUser)); // It returns arrays of arrays of key and values. This method we use very less.
+// console.log(Object.keys(tinderUser)); // It returns arrays of keys.
+// console.log(Object.values(tinderUser)); // It returns arrays of values.
+// console.log(Object.entries(tinderUser)); // It returns arrays of arrays of key and values. This method we use very less.
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
 
+// ************ Object Destructuring *******************
+// Notes:- Arrays are also destructured but very rarely used.
 
+const course = {
+    coursename: "Javascript course",
+    price: "9999",
+    courseInstructor: "Krishna"
+}
+
+// course.courseInstructor
+
+// const {courseInstructor} = course // Most of the people are using it to access the object vaules. We can also give this to our own name
+
+// const {courseInstructor: Instructor} = course // We can assigne our choice name to object keys like this.
+
+// console.log(courseInstructor);
+// console.log(Instructor);
+
+// The below code from line 84 to 88 used in React to show that above method also used in React in the same way.
+
+// const navbar = () => {
+
+// }
+
+// navbar(company = "google")
+
+// ********************************************************************************************************************************************************
+//                ******************************** API ********************************
+// ********************************************************************************************************************************************************
+
+// It is similar to object in javascript. but it has no name.
+
+// JSON:- JavaScript Object Notation
+
+// {
+//     "name": "Krishna",
+//     "coursename": "Javascrip course",
+//     "price": "free"
+// }
+
+// Sometime we also recevie API in Arrays format.
+
+[
+    {},
+    {},
+    {}
+]
